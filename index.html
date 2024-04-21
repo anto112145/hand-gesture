@@ -1,0 +1,56 @@
+ 
+<html>
+    <head>
+      <title>Hand Gesture</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+     <link rel="stylesheet" href="style.css">
+    
+    </head>
+  
+    <body>
+    <div class="container">
+      
+      <center>
+        <h3 class="btn btn-success heading">Gesture Web App</h3>
+        <br><br>
+  
+        <p style="font-size: 22px;">Model is trained to identify the following objects: 
+        <br><br><br>
+        <b id="name-of-objects">
+          Thumbs up
+          <hr>
+          Two
+          <hr>
+          Nice
+          <hr>
+        </b>
+        </p>
+        <label >Webcam view -</label>
+        <div id="camera">
+          
+        </div>
+        <br><br>
+        <button onclick="takepic()" class="btn btn-info">Capture image</button>
+        <button onclick="identify()" class="btn btn-success">Result</button>
+        <br>
+        <br>
+        <button onclick="camera()"class="btn btn-danger">Open camera</button>
+        <p style="font-size: 22px;" id="object">Object :  </p>
+        <p style="font-size: 22px;" id="accuracy">Accuracy :  </p>
+  
+      </center>
+  
+    </div>
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
